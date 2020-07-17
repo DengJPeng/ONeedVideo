@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/ONeedSDK"
+  spec.homepage     = "https://github.com/DengJPeng/ONeedVideo.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -139,7 +139,7 @@ spec.dependency "GPAC4iOS","TS2MP4","MJExtension","MBProgressHUD","AFNetworking"
 spec.libraries = "bz2.1.0", "bz2","c++.1","c++","iconv.2","iconv","stdc++.6.0.9","xml2","z.1","z"
 
 spec.frameworks = "CoreVideo", "MapKit","MediaPlayer","MobileCoreServices","OpenGLES","Photos","QuartzCore","UIKit","VideoToolbox"
-spec.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"
-$(SRCROOT)/ONeedVideo/ONeedSDK"' }
+
+spec.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(SRCROOT)/ONeedVideo/ONeedSDK"' }
 
 end
