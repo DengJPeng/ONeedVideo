@@ -31,7 +31,7 @@ Pod::Spec.new do |spec|
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   
- #spec.source_files  = "ONeedVideo/ONeedSDK.framework/Headers/**/*.{h,m}"
+ spec.source_files  = "ONeedVideo/demo/1/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -42,11 +42,20 @@ Pod::Spec.new do |spec|
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
-spec.dependency "GPAC4iOS","TS2MP4","MJExtension","MBProgressHUD","AFNetworking","MJRefresh","ICGVideoTrimmer","CocoaAsyncSocket","MobileVLCKit"
 
-spec.libraries = "bz2.1.0", "bz2","c++.1","c++","iconv.2","iconv","stdc++.6.0.9","xml2","z.1","z"
+spec.dependency "GPAC4iOS"
+spec.dependency "TS2MP4"
+spec.dependency "MJExtension"
+spec.dependency "MBProgressHUD"
+spec.dependency "AFNetworking"
+spec.dependency "MJRefresh"
+spec.dependency "ICGVideoTrimmer"
+spec.dependency "CocoaAsyncSocket"
+spec.dependency "MobileVLCKit"
 
-spec.frameworks = "CoreVideo", "MapKit","MediaPlayer","MobileCoreServices","OpenGLES","Photos","QuartzCore","UIKit","VideoToolbox"
+spec.libraries = "bz2.1.0","bz2","c++.1","c++","iconv.2","iconv","stdc++.6.0.9","xml2","z.1","z"
+
+spec.frameworks = "CoreVideo","MapKit","MediaPlayer","MobileCoreServices","OpenGLES","Photos","QuartzCore","UIKit","VideoToolbox"
 
 spec.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(SRCROOT)/ONeedVideo/ONeedSDK"' }
 
