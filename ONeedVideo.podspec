@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
  
 
   spec.name         = "ONeedVideo"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "oneed sdk"
 
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |spec|
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   
- spec.source_files  = "ONeedSDK/*/*.{h,m}"
+ spec.source_files  = "ONeedVideo/*/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
